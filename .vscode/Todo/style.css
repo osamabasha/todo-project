@@ -1,0 +1,130 @@
+:root {
+    --background: #55423d;
+    --headline: #fffffe;
+    --paragraph: #fff3ec;
+    --button-bg: #ffc0ad;
+    --button-text: #271c19;
+    --linkhover: #8f7973;
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    display: flex;
+}
+
+img.logo {
+    width: 79px;
+    height: 46px;
+    border-radius: 18%;
+}
+
+nav ul {
+    display:flex;
+    list-style-type: none;
+    /* justify-content: space-around; there is no effect because there is no extra space between the li */
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--paragraph);
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+li:hover {
+    background-color: var(--linkhover);
+}
+
+a:visited {
+    color: var(--paragraph);
+}
+
+/* First row */
+
+
+.heroSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(225, 225, 225, 0.047);
+}
+
+h1 {
+    color: var(--paragraph);
+    font-size: 3rem;
+}
+
+p {
+    color: var(--paragraph);
+    font-size: 1.5rem;
+}
+
+.heroSection button{
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 7rem;
+}
+
+.heroSection button:hover {
+    background-color: #ffc0ad8f;
+    cursor: pointer;
+}
+
+/* second section */
+
+section.secondRow {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 6% 0;
+}
+
+.secondRow article {
+    background-color: rgb(255,255,255, 0.047);
+    width: 30%;
+    height: 470px;
+    box-shadow: 3px 3px 8px #00000078;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+article img {
+    width: 50%;
+    height: 44%;
+}
+
+
+
+article p, article ul {
+    color: var(--paragraph);
+    font-size: 1rem;
+    padding: 0%;
+}
+
+h2 {
+    color: var(--headline);
+}
+
+article ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+}
+
+hr {
+    color: var(--paragraph);
+}
